@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặng Hữu Thành - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #eef2f3;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #405d78;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 10px;
+        }
+        header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-top: 10px;
+        }
+        header h1 {
+            margin: 10px 0 5px;
+            font-size: 28px;
+        }
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #405d78;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            color: #405d78;
+            margin-bottom: 10px;
+        }
+        .about p {
+            font-size: 16px;
+            text-align: justify;
+        }
+        .projects, .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #f7f9fc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-left: 5px solid #405d78;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #405d78;
+            color: white;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../asset/Thanh.jpg" alt="Ảnh cá nhân">
+            <h1>Đặng Hữu Thành</h1>
+            <p>Sinh viên Công nghệ phần mềm | Đam mê lập trình | Luôn tìm kiếm thử thách</p>
+        </header>
+
+        <nav>
+            <a href="#about">Giới thiệu</a>
+            <a href="#projects">Dự án</a>
+            <a href="#activities">Hoạt động</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <section id="about" class="about">
+            <h2>Về tôi</h2>
+        
+            <div class="info">
+                <h3>Thông tin cá nhân</h3>
+                <ul>
+                    <li><strong>Mã số sinh viên:</strong> 218060824</li>
+                    <li><strong>Họ và tên:</strong> Đặng Hữu Thành</li>
+                    <li><strong>Ngày sinh:</strong> 01/01/2003</li>
+                    <li><strong>Lớp:</strong> 21DTHD5</li>
+                    <li><strong>Khóa:</strong> 2021 - 2025</li>
+                    <li><strong>Ngành:</strong> Công nghệ thông tin</li>
+                    <li><strong>Chuyên ngành:</strong> Công nghệ phần mềm</li>
+                </ul>
+            </div>
+        
+            <div class="bio">
+                <h3>Giới thiệu bản thân</h3>
+                <p>
+                    Xin chào! Mình là Đặng Hữu Thành, một sinh viên Công nghệ phần mềm với niềm đam mê mãnh liệt với lập trình và phát triển ứng dụng.  
+                    Mình yêu thích khám phá các công nghệ mới và luôn tìm cách áp dụng chúng vào thực tế để tạo ra những sản phẩm hữu ích.  
+                    Trong quá trình học tập, mình đã thực hiện nhiều dự án thực tế và tham gia các hội thảo công nghệ để trau dồi kiến thức và mở rộng mạng lưới kết nối.  
+                    Mình tin rằng sự kiên trì, tinh thần học hỏi và khả năng làm việc nhóm sẽ giúp mình tiến xa hơn trên con đường sự nghiệp trong ngành IT.
+                </p>
+            </div>
+        </section>
+        
+
+        <section id="projects">
+            <h2>Dự án nổi bật</h2>
+            <div class="projects">
+                <div class="card">
+                    <h3>Website quản lý phòng trọ</h3>
+                    <p>Sử dụng ASP.NET Core MVC để giúp chủ trọ dễ dàng quản lý phòng, hợp đồng và khách thuê.</p>
+                </div>
+                <div class="card">
+                    <h3>Hệ thống đặt vé xem phim</h3>
+                    <p>Ứng dụng Spring Boot Java giúp người dùng đặt vé nhanh chóng với giao diện thân thiện.</p>
+                </div>
+                <div class="card">
+                    <h3>Website đặt tour du lịch</h3>
+                    <p>Phát triển với ASP.NET Core MVC, cung cấp dịch vụ đặt tour linh hoạt, tiện lợi.</p>
+                </div>
+                <div class="card">
+                    <h3>Ứng dụng đặt tour du lịch</h3>
+                    <p>Ứng dụng mobile viết bằng Flutter, cho phép khách hàng đặt tour trực tiếp từ điện thoại.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2>Hoạt động & Sự kiện</h2>
+            <div class="activities">
+                <div class="card">
+                    <h3>Software Testing & QA</h3>
+                    <p>Hội thảo về kiểm thử phần mềm, giúp tôi hiểu sâu hơn về quy trình kiểm thử chuyên nghiệp.</p>
+                </div>
+                <div class="card">
+                    <h3>Định hướng nghề IT</h3>
+                    <p>Buổi tư vấn chuyên ngành CNTT, giúp tôi có cái nhìn rõ ràng hơn về con đường sự nghiệp.</p>
+                </div>
+                <div class="card">
+                    <h3>Data Science Pathways</h3>
+                    <p>Khám phá xu hướng khoa học dữ liệu và ứng dụng AI trong thực tế.</p>
+                </div>
+                <div class="card">
+                    <h3>Kết nối doanh nghiệp</h3>
+                    <p>Gặp gỡ các chuyên gia công nghệ, tìm hiểu về xu hướng phát triển nghề IT.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Liên hệ</h2>
+            <p>Nếu bạn muốn kết nối hoặc trao đổi về công nghệ, hãy liên hệ với tôi qua email: <strong>danghuuthanh112003@gmail.com</strong></p>
+        </section>
+
+        <footer>
+            &copy; 2025 Đặng Hữu Thành. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

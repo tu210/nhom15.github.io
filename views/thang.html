@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông Tin Cá Nhân - Võ Quốc Thắng</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #549bb3, #367ed5);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h2 {
+      font-size: 2.2em;
+      font-weight: bold;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .profile {
+      flex: 1;
+      text-align: center;
+    }
+    .profile .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .profile .avatar:hover {
+      transform: scale(1.1);
+    }
+    .info {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+    .info strong {
+      color: #ffeb3b;
+    }
+    .projects {
+      flex: 2;
+    }
+    .projects h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      text-align: center;
+      border-bottom: 2px solid #ffeb3b;
+      padding-bottom: 10px;
+    }
+    .projects ul {
+      list-style: none;
+    }
+    .projects li {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .projects li:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.02);
+    }
+    .projects ul ul {
+      margin-top: 10px;
+      padding-left: 20px;
+      list-style-type: square;
+    }
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Thông Tin Cá Nhân</h2>
+    </div>
+    <div class="content">
+      <div class="profile">
+         <img class="avatar" src="ANH.jpg" alt="Avatar">
+         <div class="info"><strong>Họ và Tên:</strong> Võ Quốc Thắng</div>
+         <div class="info"><strong>Ngày Sinh:</strong> 9/11/2003</div>
+         <div class="info"><strong>Giới Tính:</strong> Nam</div>
+         <div class="info"><strong>Địa Chỉ:</strong> 3/2 Hoàng Sa, Đa Kao, Quận 1</div>
+         <div class="info"><strong>Số Điện Thoại:</strong> 0988672882</div>
+         <div class="info"><strong>Chuyên Ngành:</strong> Công nghệ phần mềm</div>
+         <div class="info"><strong>Khóa Học:</strong> 2021-2025</div>
+      </div>
+      <div class="projects">
+          <h3>Dự án đã tham gia</h3>
+          <ul>
+            <li>
+              <strong>Web đặt tour du lịch - ASP.NET Core</strong>
+              <p>Hệ thống đặt tour du lịch trực tuyến giúp khách hàng dễ dàng tìm kiếm, đặt tour, thanh toán và theo dõi lịch trình.</p>
+              <ul>
+                <li>Quản lý tài khoản người dùng (đăng ký, đăng nhập, phân quyền).</li>
+                <li>Danh mục tour du lịch chi tiết.</li>
+                <li>Đặt tour, thanh toán online qua VnPay.</li>
+              </ul>
+              <p><strong>Công nghệ:</strong> ASP.NET Core, SQL Server, Bootstrap.</p>
+            </li>
+            <li>
+              <strong>Web đặt vé xem phim - Spring Boot Java</strong>
+              <p>Hệ thống đặt vé xem phim trực tuyến giúp người dùng dễ dàng chọn phim, suất chiếu, chỗ ngồi và thanh toán.</p>
+              <ul>
+                <li>Quản lý tài khoản người dùng.</li>
+                <li>Danh sách phim và suất chiếu theo từng rạp.</li>
+                <li>Chức năng chọn ghế và đặt vé trực tuyến.</li>
+              </ul>
+              <p><strong>Công nghệ:</strong> Spring Boot, MySQL, Thymeleaf, Bootstrap.</p>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
